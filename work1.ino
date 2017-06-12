@@ -10,7 +10,7 @@ Ultrasonic ultrasonic(TRIGGER, ECHO);
 void setup() 
 {
 Serial.begin(9600);
- Serial.println("04050343 04050794 START");
+ Serial.println("04052520 04050760 START");
   lcd.begin(20, 2);
   lcd.home();
 lcd.cursor(); // 游標
@@ -26,7 +26,7 @@ in = ultrasonic.convert(ms, Ultrasonic::IN);
 Serial.print("MS: "); Serial.print(ms);
 Serial.print(", CM: "); Serial.print(cm);
 Serial.print(", IN: "); Serial.println(in);
-//04050343 04050794
+//04052520 04050760
 lcd.print("MS = ");
 lcd.print(ms);
 //lcd.setCursor(0, 1); 
